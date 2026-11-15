@@ -50,7 +50,7 @@ cargo run --release --example arena -- 20000 0 20261117
 cargo run --release --example danger -- 20000 20261116
 ```
 
-發牌統計和自對局用的是 tsap-oo 的 `3d19261` 版，危險度用的是 `3526146` 版。
+發牌統計用的是 tsap-oo 的 `6428dab` 版，自對局是 `3d19261` 版，危險度是 `3526146` 版。
 
 成對比較用 `ab/run.sh`，對照的舊版本依序是 `d74b170`、`6fc8f21`、`1b644f2`、`a74b951`。每一次比較的完整紀錄在 tsap-oo 的 [CHANGELOG](https://github.com/jdh8/tsap-oo/blob/main/CHANGELOG.md)。
 
