@@ -1,0 +1,5 @@
+fenced-code-language: false
+no-inline-html: false
+table-column-style: false
+table-pipe-style: false
+line-length: false

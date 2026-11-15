@@ -1,0 +1,43 @@
+[book]
+authors = ["Chen-Pang He"]
+title = "十胡：從規則到戰術"
+language = "zh-TW"
+
+[output.html]
+additional-css = ["style.css"]
+site-url = "https://jdh8.github.io/tsap-oo-book/"
+git-repository-url = "https://github.com/jdh8/tsap-oo-book"
+edit-url-template = "https://github.com/jdh8/tsap-oo-book/edit/main/{path}"
+
+[preprocessor.replace]
+
+# 顏色加牌面就是一張牌：紅帥、綠卒。不分顏色的「將帥」「兵卒」維持文字。
+[preprocessor.replace.list]
+"紅帥" = "<span class='card red'>帥</span>"
+"紅仕" = "<span class='card red'>仕</span>"
+"紅相" = "<span class='card red'>相</span>"
+"紅俥" = "<span class='card red'>俥</span>"
+"紅傌" = "<span class='card red'>傌</span>"
+"紅炮" = "<span class='card red'>炮</span>"
+"紅兵" = "<span class='card red'>兵</span>"
+"黃帥" = "<span class='card yellow'>帥</span>"
+"黃仕" = "<span class='card yellow'>仕</span>"
+"黃相" = "<span class='card yellow'>相</span>"
+"黃俥" = "<span class='card yellow'>俥</span>"
+"黃傌" = "<span class='card yellow'>傌</span>"
+"黃炮" = "<span class='card yellow'>炮</span>"
+"黃兵" = "<span class='card yellow'>兵</span>"
+"綠將" = "<span class='card green'>將</span>"
+"綠士" = "<span class='card green'>士</span>"
+"綠象" = "<span class='card green'>象</span>"
+"綠車" = "<span class='card green'>車</span>"
+"綠馬" = "<span class='card green'>馬</span>"
+"綠包" = "<span class='card green'>包</span>"
+"綠卒" = "<span class='card green'>卒</span>"
+"白將" = "<span class='card white'>將</span>"
+"白士" = "<span class='card white'>士</span>"
+"白象" = "<span class='card white'>象</span>"
+"白車" = "<span class='card white'>車</span>"
+"白馬" = "<span class='card white'>馬</span>"
+"白包" = "<span class='card white'>包</span>"
+"白卒" = "<span class='card white'>卒</span>"
