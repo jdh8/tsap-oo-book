@@ -1,3 +1,7 @@
+/* 台羅 needs U+030D (a̍), which neither Open Sans nor Google's Noto Sans subsets carry.
+   text= asks for a subset of exactly the 台羅 alphabet and tone marks. */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&text=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-%CC%80%CC%81%CC%82%CC%84%CC%86%CC%8B%CC%8C%CC%8D&display=swap");
+
 /* Typography */
 html {
 	hyphens: auto;
@@ -8,6 +12,12 @@ em {
 	font-synthesis: weight;
 	text-emphasis: filled;
 	text-emphasis-position: under right;
+}
+
+/* 台羅: one font for base and mark, real italics, no 著重號 */
+[lang="nan-Latn"] {
+	font-family: "Noto Sans", sans-serif;
+	text-emphasis: none;
 }
 
 /* Room for the dots: below 1.75 they push their line down in Firefox */
