@@ -19,7 +19,6 @@
 - [孤張、搭子、對子](material.md)
 - [對子能有幾個](pairs.md)
 - [求快還是求大](payoff.md)
-- [別把自己組死](dead.md)
 
 # 第三部　戰術
 
