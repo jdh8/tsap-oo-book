@@ -14,7 +14,9 @@
 # 第二部　從規則到戰略
 
 - [手牌只會變少](shrink.md)
+- [三七二十一](seven.md)
 - [十胡從哪裡來](ten.md)
+- [孤張、搭子、對子](material.md)
 - [對子能有幾個](pairs.md)
 - [求快還是求大](payoff.md)
 - [別把自己組死](dead.md)
