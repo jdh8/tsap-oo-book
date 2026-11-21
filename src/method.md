@@ -48,13 +48,15 @@
 |---|---|---|---:|---|
 | [手牌只會變少](shrink.md)、[十胡從哪裡來](ten.md) | 6.6 胡、7.3 張散牌 | 發牌統計 | 100,000 | 20261118 |
 | [求快還是求大](payoff.md)、[十胡從哪裡來](ten.md) | 97.0% 有人胡、12.2 胡、胡牌的牌組 | 自對局 | 20,000 | 20261117 |
+| [十胡從哪裡來](ten.md) | 3.8% 只能靠將士象 | 從規則精確計算 | — | — |
 
 ```sh
 cargo run --release --example dealt -- 100000 20261118
 cargo run --release --example arena -- 20000 0 20261117
+python3 stranded.py
 ```
 
-發牌統計用的是 tsap-oo 的 `6428dab` 版，自對局是 `4dcfa95` 版。
+發牌統計用的是 tsap-oo 的 `6428dab` 版，自對局是 `4dcfa95` 版。`stranded.py` 在本書的原始碼裡，數的是 20 張的發牌，沒有抽樣。
 
 其他各章只寫方向的結論，量測的紀錄在 tsap-oo 的 [CHANGELOG](https://github.com/jdh8/tsap-oo/blob/main/CHANGELOG.md) 和 [research/](https://github.com/jdh8/tsap-oo/tree/main/research)。
 
