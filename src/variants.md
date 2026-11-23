@@ -74,4 +74,4 @@
 
 ## 出處
 
-每一條的原文、網址和查核日期，記在 tsap-oo 的 [research/](https://github.com/jdh8/tsap-oo/tree/main/research) 目錄。
+每一條的原文、網址和查核日期，記在本書原始碼的 [research/](https://github.com/jdh8/tsap-oo-book/tree/main/research) 目錄。

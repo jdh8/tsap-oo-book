@@ -3,9 +3,12 @@
 台灣繁體中文的 mdbook，寫法照 ../bridge-tutorial：零基礎也能讀，先講規則，從胡數表推導戰略，再談戰術。
 規則和所有數據來自 ../tsap-oo。
 
+這個 repo 全用台灣繁體中文。書（`src/`）以教學為主。`research/` 探討各家、各地的規則，逐條記下原文、網址和查核日期，不探討程式實作。
+程式的設計和量測在 ../tsap-oo 的 `doc/` 和 `research/`，全用英文。
+
 ## 資料的規矩
 
-- 規則以 ../tsap-oo 的 `README.md` 和 `src/round.rs` 為準。各地的出入寫在 `src/variants.md`，出處在 ../tsap-oo/research/。
+- 規則以 ../tsap-oo 的 `README.md` 和 `src/round.rs` 為準。各地的出入寫在 `src/variants.md`，出處在 `research/`。
 - 談打法的結論要有量測。可以寫的只有兩種：從胡數表算得出來的，以及 ../tsap-oo 的 `CHANGELOG.md` 或 `research/` 裡有紀錄的。
   沒量過的想法，先到 ../tsap-oo 照它的 `CLAUDE.md` 量，再寫進書裡。
 - 每個數字附上指令和種子，並登記在 `src/method.md` 的表裡。
