@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 688.8 262" width="688.8" height="262" role="img" aria-label="上排：一組將士象加六組 1 胡，合計 8 胡。下排：6 張 5 胡、三個對子、三組 1 胡，合計 8 胡">
+<!-- Drawn by fig.py: edit the figure there -->
+<g fill="currentColor" stroke="currentColor" stroke-width="1.5">
+<rect x="1.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<circle cx="12.0" cy="62.0" r="6.5" fill="none"/>
+<path d="M12.0,59.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<rect x="89.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="177.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="265.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="353.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="441.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="529.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<path d="M3,23v-5H69v5" fill="none" stroke-width="1"/>
+<path d="M91,23v-5H597v5" fill="none" stroke-width="1"/>
+<rect x="1.5" y="165.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<circle cx="12.0" cy="200.0" r="6.5" fill="none"/>
+<path d="M12.0,197.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<rect x="89.5" y="165.5" width="23" height="69" fill="#d9534f" stroke-width="0.5"/>
+<rect x="112.5" y="165.5" width="23" height="69" fill="#f0c541" stroke-width="0.5"/>
+<rect x="135.5" y="165.5" width="23" height="69" fill="#4caf7d" stroke-width="0.5"/>
+<rect x="89.5" y="165.5" width="69" height="69" rx="2" fill-opacity="0"/>
+<rect x="177.5" y="165.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="225.5" y="165.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="273.5" y="165.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="337.5" y="165.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="425.5" y="165.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="513.5" y="165.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<path d="M3,161v-5H157v5" fill="none" stroke-width="1"/>
+<path d="M179,161v-5H317v5" fill="none" stroke-width="1"/>
+<path d="M339,161v-5H581v5" fill="none" stroke-width="1"/>
+</g>
+<g fill="currentColor" font-size="14" text-anchor="middle">
+<text x="36" y="116" font-weight="bold">2</text>
+<text x="124" y="116" font-weight="bold">1</text>
+<text x="212" y="116" font-weight="bold">1</text>
+<text x="300" y="116" font-weight="bold">1</text>
+<text x="388" y="116" font-weight="bold">1</text>
+<text x="476" y="116" font-weight="bold">1</text>
+<text x="564" y="116" font-weight="bold">1</text>
+<text x="36" y="13">將士象</text>
+<text x="344" y="13">另外六組，各 1 胡</text>
+<text x="36" y="254" font-weight="bold">2</text>
+<text x="124" y="254" font-weight="bold">3</text>
+<text x="248" y="254" font-weight="bold">0</text>
+<text x="372" y="254" font-weight="bold">1</text>
+<text x="460" y="254" font-weight="bold">1</text>
+<text x="548" y="254" font-weight="bold">1</text>
+<text x="80" y="151">6 張 5 胡</text>
+<text x="248" y="151">三個對子，佔兩組</text>
+<text x="460" y="151">剩下三組</text>
+<text x="612" y="68.0" font-size="16" font-weight="bold" text-anchor="start">＝ 8 胡</text>
+<text x="612" y="206.0" font-size="16" font-weight="bold" text-anchor="start">＝ 8 胡</text>
+</g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 688.8 116" width="688.8" height="116" role="img" aria-label="七組都是 1 胡：三組車馬炮、兩組碰、兩組將帥配對子，合計 7 胡">
+<!-- Drawn by fig.py: edit the figure there -->
+<g fill="currentColor" stroke="currentColor" stroke-width="1.5">
+<rect x="1.5" y="1.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="89.5" y="1.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="177.5" y="1.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="265.5" y="1.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="353.5" y="1.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="441.5" y="1.5" width="21" height="69" rx="2" fill-opacity="0"/>
+<circle cx="452.0" cy="36.0" r="6.5" fill="none"/>
+<path d="M452.0,33.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<rect x="465.5" y="1.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="529.5" y="1.5" width="21" height="69" rx="2" fill-opacity="0"/>
+<circle cx="540.0" cy="36.0" r="6.5" fill="none"/>
+<path d="M540.0,33.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<rect x="553.5" y="1.5" width="45" height="69" rx="2" fill-opacity="0"/>
+</g>
+<g fill="currentColor" font-size="14" text-anchor="middle">
+<text x="36" y="90" font-weight="bold">1</text>
+<text x="36" y="108">車馬炮</text>
+<text x="124" y="90" font-weight="bold">1</text>
+<text x="124" y="108">車馬炮</text>
+<text x="212" y="90" font-weight="bold">1</text>
+<text x="212" y="108">車馬炮</text>
+<text x="300" y="90" font-weight="bold">1</text>
+<text x="300" y="108">碰</text>
+<text x="388" y="90" font-weight="bold">1</text>
+<text x="388" y="108">碰</text>
+<text x="476" y="90" font-weight="bold">1</text>
+<text x="476" y="108">將帥配對子</text>
+<text x="564" y="90" font-weight="bold">1</text>
+<text x="564" y="108">將帥配對子</text>
+<text x="612" y="42.0" font-size="16" font-weight="bold" text-anchor="start">＝ 7 胡</text>
+</g>
+</svg>
