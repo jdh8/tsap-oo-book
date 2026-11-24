@@ -21,7 +21,6 @@
 
 # 第三部　戰術
 
-- [孤張先打誰](loose.md)
 - [搭子](partial.md)
 - [吃，還是等摸牌](eat.md)
 - [聽牌](waiting.md)
