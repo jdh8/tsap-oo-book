@@ -8,9 +8,9 @@ box is 0 胡.
 
     1  車馬炮 or 碰                 grey square
     K  將士象                       grey square, coin on its left card
-    S  三色兵卒, any 三胡三張組     red, yellow and green stripes
+    S  三色兵卒                     red, yellow and green stripes
     Q  四色兵卒                     the same with a white stripe, four wide
-    D  暗刻                         dark square
+    D  暗刻, any 三胡三張組         dark square: 3 胡 is three times the grey
     G  單張將帥                     empty strip with the coin
     P  對子                         empty box, two wide
 
@@ -179,7 +179,7 @@ def seats(alt):
     return svg(alt, 2 * c, 2 * c, shapes, text)
 
 
-RICH = [("K", "2"), ("S", "3")]
+RICH = [("K", "2"), ("D", "3")]
 PAIRS = dict(
     blocks=RICH + [("PPP", "0")] + [("1", "1")] * 3,
     total="＝ 8 胡",
@@ -220,7 +220,7 @@ FIGURES = {
     "seven-ten": figure(
         "上排：將士象 2 胡、三胡三張組 3 胡，加上五組 1 胡，合計 10 胡。下排：同樣的 6 張 5 胡，三個對子佔掉兩組，剩下三組各 1 胡，合計 8 胡",
         dict(
-            blocks=[("K", "2", "將士象"), ("S", "3", "三胡三張組")] + [("1", "1")] * 5,
+            blocks=[("K", "2", "將士象"), ("D", "3", "三胡三張組")] + [("1", "1")] * 5,
             total="＝ 10 胡",
             over=[(0, 1, "6 張 5 胡"), (2, 6, "另外五組，各 1 胡")],
         ),
@@ -289,7 +289,7 @@ FIGURES = {
         ),
     ),
     "pairs-count": figure(
-        "三手 10 胡的牌。上排：將士象和三色兵卒是 6 張 5 胡，兩張將帥各配一個對子，上限 2 個。中排：四色兵卒配一個對子是 6 張 5 胡，兩張將帥各配一個，上限 3 個。下排：兩個三胡三張組和一組將士象多出 2 胡，換三個對子，上限 3 個",
+        "三手 10 胡的牌。上排：將士象和三胡三張組是 6 張 5 胡，兩張將帥各配一個對子，上限 2 個。中排：四色兵卒配一個對子是 6 張 5 胡，兩張將帥各配一個，上限 3 個。下排：兩個三胡三張組和一組將士象多出 2 胡，換三個對子，上限 3 個",
         dict(
             blocks=RICH + [("GP", "1")] * 2 + [("1", "1")] * 3,
             total="上限 2 個",
@@ -301,7 +301,7 @@ FIGURES = {
             over=[(0, 0, "6 張 5 胡，對子算一個"), (1, 2, "將帥各配一個"), (3, 5, "剩下三組")],
         ),
         dict(
-            blocks=[("S", "3"), ("S", "3"), ("K", "2"), ("PPP", "0")] + [("1", "1")] * 2,
+            blocks=[("D", "3"), ("D", "3"), ("K", "2"), ("PPP", "0")] + [("1", "1")] * 2,
             total="上限 3 個",
             over=[(0, 1, "6 張 6 胡，多 1 胡"), (2, 2, "多 1 胡"), (3, 3, "2 胡換三個對子"), (4, 5, "剩下兩組")],
         ),

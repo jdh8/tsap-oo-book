@@ -1,13 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 704.8 400" width="704.8" height="400" role="img" aria-label="三手 10 胡的牌。上排：將士象和三色兵卒是 6 張 5 胡，兩張將帥各配一個對子，上限 2 個。中排：四色兵卒配一個對子是 6 張 5 胡，兩張將帥各配一個，上限 3 個。下排：兩個三胡三張組和一組將士象多出 2 胡，換三個對子，上限 3 個">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 704.8 400" width="704.8" height="400" role="img" aria-label="三手 10 胡的牌。上排：將士象和三胡三張組是 6 張 5 胡，兩張將帥各配一個對子，上限 2 個。中排：四色兵卒配一個對子是 6 張 5 胡，兩張將帥各配一個，上限 3 個。下排：兩個三胡三張組和一組將士象多出 2 胡，換三個對子，上限 3 個">
 <!-- Drawn by fig.py: edit the figure there -->
 <g fill="currentColor" stroke="currentColor" stroke-width="1.5">
 <rect x="1.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
 <circle cx="12.0" cy="62.0" r="6.5" fill="none"/>
 <path d="M12.0,59.0l3,3 -3,3 -3,-3z" stroke="none"/>
-<rect x="89.5" y="27.5" width="23" height="69" fill="#d9534f" stroke-width="0.5"/>
-<rect x="112.5" y="27.5" width="23" height="69" fill="#f0c541" stroke-width="0.5"/>
-<rect x="135.5" y="27.5" width="23" height="69" fill="#4caf7d" stroke-width="0.5"/>
-<rect x="89.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0"/>
+<rect x="89.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.6"/>
 <rect x="177.5" y="27.5" width="21" height="69" rx="2" fill-opacity="0"/>
 <circle cx="188.0" cy="62.0" r="6.5" fill="none"/>
 <path d="M188.0,59.0l3,3 -3,3 -3,-3z" stroke="none"/>
@@ -42,14 +39,8 @@
 <path d="M3,161v-5H141v5" fill="none" stroke-width="1"/>
 <path d="M163,161v-5H317v5" fill="none" stroke-width="1"/>
 <path d="M339,161v-5H581v5" fill="none" stroke-width="1"/>
-<rect x="1.5" y="303.5" width="23" height="69" fill="#d9534f" stroke-width="0.5"/>
-<rect x="24.5" y="303.5" width="23" height="69" fill="#f0c541" stroke-width="0.5"/>
-<rect x="47.5" y="303.5" width="23" height="69" fill="#4caf7d" stroke-width="0.5"/>
-<rect x="1.5" y="303.5" width="69" height="69" rx="2" fill-opacity="0"/>
-<rect x="89.5" y="303.5" width="23" height="69" fill="#d9534f" stroke-width="0.5"/>
-<rect x="112.5" y="303.5" width="23" height="69" fill="#f0c541" stroke-width="0.5"/>
-<rect x="135.5" y="303.5" width="23" height="69" fill="#4caf7d" stroke-width="0.5"/>
-<rect x="89.5" y="303.5" width="69" height="69" rx="2" fill-opacity="0"/>
+<rect x="1.5" y="303.5" width="69" height="69" rx="2" fill-opacity="0.6"/>
+<rect x="89.5" y="303.5" width="69" height="69" rx="2" fill-opacity="0.6"/>
 <rect x="177.5" y="303.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
 <circle cx="188.0" cy="338.0" r="6.5" fill="none"/>
 <path d="M188.0,335.0l3,3 -3,3 -3,-3z" stroke="none"/>
