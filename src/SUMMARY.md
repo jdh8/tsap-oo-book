@@ -17,6 +17,7 @@
 - [三七二十一](seven.md)
 - [十胡從哪裡來](ten.md)
 - [孤張、搭子、對子](material.md)
+  - [對子能吃幾個](material/pairs.md)
 - [求快還是求大](payoff.md)
 
 # 第三部　戰術

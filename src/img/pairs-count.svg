@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 704.8 400" width="704.8" height="400" role="img" aria-label="三手 10 胡的牌。上排：將士象和三色兵卒是 6 張 5 胡，兩張將帥各配一個對子，上限 2 個。中排：四色兵卒配一個對子是 6 張 5 胡，兩張將帥各配一個，上限 3 個。下排：兩個三胡三張組和一組將士象多出 2 胡，換三個對子，上限 3 個">
+<!-- Drawn by fig.py: edit the figure there -->
+<g fill="currentColor" stroke="currentColor" stroke-width="1.5">
+<rect x="1.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<circle cx="12.0" cy="62.0" r="6.5" fill="none"/>
+<path d="M12.0,59.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<rect x="89.5" y="27.5" width="23" height="69" fill="#d9534f" stroke-width="0.5"/>
+<rect x="112.5" y="27.5" width="23" height="69" fill="#f0c541" stroke-width="0.5"/>
+<rect x="135.5" y="27.5" width="23" height="69" fill="#4caf7d" stroke-width="0.5"/>
+<rect x="89.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0"/>
+<rect x="177.5" y="27.5" width="21" height="69" rx="2" fill-opacity="0"/>
+<circle cx="188.0" cy="62.0" r="6.5" fill="none"/>
+<path d="M188.0,59.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<rect x="201.5" y="27.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="265.5" y="27.5" width="21" height="69" rx="2" fill-opacity="0"/>
+<circle cx="276.0" cy="62.0" r="6.5" fill="none"/>
+<path d="M276.0,59.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<rect x="289.5" y="27.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="353.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="441.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="529.5" y="27.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<path d="M3,23v-5H157v5" fill="none" stroke-width="1"/>
+<path d="M179,23v-5H333v5" fill="none" stroke-width="1"/>
+<path d="M355,23v-5H597v5" fill="none" stroke-width="1"/>
+<rect x="1.5" y="165.5" width="23.25" height="69" fill="#d9534f" stroke-width="0.5"/>
+<rect x="24.75" y="165.5" width="23.25" height="69" fill="#f0c541" stroke-width="0.5"/>
+<rect x="48" y="165.5" width="23.25" height="69" fill="#4caf7d" stroke-width="0.5"/>
+<rect x="71.25" y="165.5" width="23.25" height="69" fill="#fdfdf7" stroke-width="0.5"/>
+<rect x="1.5" y="165.5" width="93" height="69" rx="2" fill-opacity="0"/>
+<rect x="97.5" y="165.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="161.5" y="165.5" width="21" height="69" rx="2" fill-opacity="0"/>
+<circle cx="172.0" cy="200.0" r="6.5" fill="none"/>
+<path d="M172.0,197.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<rect x="185.5" y="165.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="249.5" y="165.5" width="21" height="69" rx="2" fill-opacity="0"/>
+<circle cx="260.0" cy="200.0" r="6.5" fill="none"/>
+<path d="M260.0,197.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<rect x="273.5" y="165.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="337.5" y="165.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="425.5" y="165.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="513.5" y="165.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<path d="M3,161v-5H141v5" fill="none" stroke-width="1"/>
+<path d="M163,161v-5H317v5" fill="none" stroke-width="1"/>
+<path d="M339,161v-5H581v5" fill="none" stroke-width="1"/>
+<rect x="1.5" y="303.5" width="23" height="69" fill="#d9534f" stroke-width="0.5"/>
+<rect x="24.5" y="303.5" width="23" height="69" fill="#f0c541" stroke-width="0.5"/>
+<rect x="47.5" y="303.5" width="23" height="69" fill="#4caf7d" stroke-width="0.5"/>
+<rect x="1.5" y="303.5" width="69" height="69" rx="2" fill-opacity="0"/>
+<rect x="89.5" y="303.5" width="23" height="69" fill="#d9534f" stroke-width="0.5"/>
+<rect x="112.5" y="303.5" width="23" height="69" fill="#f0c541" stroke-width="0.5"/>
+<rect x="135.5" y="303.5" width="23" height="69" fill="#4caf7d" stroke-width="0.5"/>
+<rect x="89.5" y="303.5" width="69" height="69" rx="2" fill-opacity="0"/>
+<rect x="177.5" y="303.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<circle cx="188.0" cy="338.0" r="6.5" fill="none"/>
+<path d="M188.0,335.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<rect x="265.5" y="303.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="313.5" y="303.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="361.5" y="303.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="425.5" y="303.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<rect x="513.5" y="303.5" width="69" height="69" rx="2" fill-opacity="0.2"/>
+<path d="M3,299v-5H157v5" fill="none" stroke-width="1"/>
+<path d="M179,299v-5H245v5" fill="none" stroke-width="1"/>
+<path d="M267,299v-5H405v5" fill="none" stroke-width="1"/>
+<path d="M427,299v-5H581v5" fill="none" stroke-width="1"/>
+</g>
+<g fill="currentColor" font-size="14" text-anchor="middle">
+<text x="36" y="116" font-weight="bold">2</text>
+<text x="124" y="116" font-weight="bold">3</text>
+<text x="212" y="116" font-weight="bold">1</text>
+<text x="300" y="116" font-weight="bold">1</text>
+<text x="388" y="116" font-weight="bold">1</text>
+<text x="476" y="116" font-weight="bold">1</text>
+<text x="564" y="116" font-weight="bold">1</text>
+<text x="80" y="13">6 張 5 胡</text>
+<text x="256" y="13">將帥各配一個</text>
+<text x="476" y="13">剩下三組</text>
+<text x="72" y="254" font-weight="bold">5</text>
+<text x="196" y="254" font-weight="bold">1</text>
+<text x="284" y="254" font-weight="bold">1</text>
+<text x="372" y="254" font-weight="bold">1</text>
+<text x="460" y="254" font-weight="bold">1</text>
+<text x="548" y="254" font-weight="bold">1</text>
+<text x="72" y="151">6 張 5 胡，對子算一個</text>
+<text x="240" y="151">將帥各配一個</text>
+<text x="460" y="151">剩下三組</text>
+<text x="36" y="392" font-weight="bold">3</text>
+<text x="124" y="392" font-weight="bold">3</text>
+<text x="212" y="392" font-weight="bold">2</text>
+<text x="336" y="392" font-weight="bold">0</text>
+<text x="460" y="392" font-weight="bold">1</text>
+<text x="548" y="392" font-weight="bold">1</text>
+<text x="80" y="289">6 張 6 胡，多 1 胡</text>
+<text x="212" y="289">多 1 胡</text>
+<text x="336" y="289">2 胡換三個對子</text>
+<text x="504" y="289">剩下兩組</text>
+<text x="612" y="68.0" font-size="16" font-weight="bold" text-anchor="start">上限 2 個</text>
+<text x="612" y="206.0" font-size="16" font-weight="bold" text-anchor="start">上限 3 個</text>
+<text x="612" y="344.0" font-size="16" font-weight="bold" text-anchor="start">上限 3 個</text>
+</g>
+</svg>
