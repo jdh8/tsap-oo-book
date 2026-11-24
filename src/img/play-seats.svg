@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 208 192" width="208" height="192" role="img" aria-label="四家圍著牌桌，逆時針輪流：你、右手邊的下家、對面的對家、左手邊的上家，再回到你">
+<!-- Drawn by fig.py: edit the figure there -->
+<g fill="currentColor" stroke="currentColor" stroke-width="1.5">
+<rect x="62" y="62" width="68" height="68" rx="4" fill="none"/>
+<path d="M125.3,161.8A72,72 0 0 0 161.8,125.3" fill="none"/>
+<path d="M0,-5l9,5 -9,5z" stroke="none" transform="translate(161.8,125.3) rotate(-66.0)"/>
+<path d="M161.8,66.7A72,72 0 0 0 125.3,30.2" fill="none"/>
+<path d="M0,-5l9,5 -9,5z" stroke="none" transform="translate(125.3,30.2) rotate(-156.0)"/>
+<path d="M66.7,30.2A72,72 0 0 0 30.2,66.7" fill="none"/>
+<path d="M0,-5l9,5 -9,5z" stroke="none" transform="translate(30.2,66.7) rotate(-246.0)"/>
+<path d="M30.2,125.3A72,72 0 0 0 66.7,161.8" fill="none"/>
+<path d="M0,-5l9,5 -9,5z" stroke="none" transform="translate(66.7,161.8) rotate(24.0)"/>
+</g>
+<g fill="currentColor" font-size="14" text-anchor="middle">
+<text x="96" y="101">逆時針</text>
+<text x="96" y="173" font-weight="bold">你</text>
+<text x="168" y="101" font-weight="bold">下家</text>
+<text x="96" y="29" font-weight="bold">對家</text>
+<text x="24" y="101" font-weight="bold">上家</text>
+</g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 298.4 272" width="298.4" height="272" role="img" aria-label="吃之前，手上有一組車馬炮和一張散牌。吃進上家打的俥之後，桌上是一組車馬炮，手上原本的俥落單，另一張散牌打掉。胡數和散牌的張數都沒有變">
+<!-- Drawn by fig.py: edit the figure there -->
+<g fill="currentColor" stroke="currentColor" stroke-width="1.5">
+<rect x="1.5" y="27.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="12" y="68" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<rect x="25.5" y="27.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="36" y="68" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">傌</text>
+<rect x="49.5" y="27.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="60" y="68" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">炮</text>
+<rect x="89.5" y="27.5" width="21" height="69" rx="2" fill="#fdfdf7"/>
+<text x="100" y="68" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">士</text>
+<rect x="129.5" y="27.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="140" y="68" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<path d="M3,23v-5H109v5" fill="none" stroke-width="1"/>
+<path d="M131,23v-5H149v5" fill="none" stroke-width="1"/>
+<rect x="1.5" y="175.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="12" y="216" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<path d="M7,166h10l-5,7z" stroke="none"/>
+<rect x="25.5" y="175.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="36" y="216" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">傌</text>
+<rect x="49.5" y="175.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="60" y="216" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">炮</text>
+<rect x="89.5" y="175.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="100" y="216" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<rect x="129.5" y="175.5" width="21" height="69" rx="2" fill="#fdfdf7"/>
+<text x="140" y="216" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">士</text>
+<path d="M3,161v-5H69v5" fill="none" stroke-width="1"/>
+<path d="M91,161v-5H109v5" fill="none" stroke-width="1"/>
+<path d="M131,161v-5H149v5" fill="none" stroke-width="1"/>
+</g>
+<g fill="currentColor" font-size="14" text-anchor="middle">
+<text x="36" y="116" font-weight="bold">1 胡</text>
+<text x="100" y="116" font-weight="bold">散牌</text>
+<text x="140" y="116" font-weight="bold">打出</text>
+<text x="56" y="13">手上</text>
+<text x="140" y="13">上家</text>
+<text x="36" y="264" font-weight="bold">1 胡</text>
+<text x="100" y="264" font-weight="bold">散牌</text>
+<text x="140" y="264" font-weight="bold">打掉</text>
+<text x="36" y="151">桌上</text>
+<text x="100" y="151">手上</text>
+<text x="140" y="151">棄牌</text>
+<text x="164" y="68.0" font-size="16" font-weight="bold" text-anchor="start">1 胡，1 張散牌</text>
+<text x="164" y="216.0" font-size="16" font-weight="bold" text-anchor="start">1 胡，1 張散牌</text>
+</g>
+</svg>

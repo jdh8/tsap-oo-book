@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 264 152" width="264" height="152" role="img" aria-label="兩張將帥各配一個對子，剛好配完。又摸到一張將帥，還缺一個對子來配">
+<!-- Drawn by fig.py: edit the figure there -->
+<g fill="currentColor" stroke="currentColor" stroke-width="1.5">
+<rect x="1.5" y="37.5" width="21" height="69" rx="2" fill-opacity="0"/>
+<circle cx="12.0" cy="72.0" r="6.5" fill="none"/>
+<path d="M12.0,69.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<rect x="25.5" y="37.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="89.5" y="37.5" width="21" height="69" rx="2" fill-opacity="0"/>
+<circle cx="100.0" cy="72.0" r="6.5" fill="none"/>
+<path d="M100.0,69.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<rect x="113.5" y="37.5" width="45" height="69" rx="2" fill-opacity="0"/>
+<rect x="177.5" y="37.5" width="21" height="69" rx="2" fill-opacity="0"/>
+<circle cx="188.0" cy="72.0" r="6.5" fill="none"/>
+<path d="M188.0,69.0l3,3 -3,3 -3,-3z" stroke="none"/>
+<path d="M183,28h10l-5,7z" stroke="none"/>
+<g opacity="0.5" stroke-dasharray="4 3">
+<rect x="201.5" y="37.5" width="45" height="69" rx="2" fill-opacity="0"/>
+</g>
+<path d="M3,23v-5H157v5" fill="none" stroke-width="1"/>
+<path d="M179,23v-5H245v5" fill="none" stroke-width="1"/>
+</g>
+<g fill="currentColor" font-size="14" text-anchor="middle">
+<text x="36" y="126" font-weight="bold">1</text>
+<text x="124" y="126" font-weight="bold">1</text>
+<text x="212" y="126" font-weight="bold">1</text>
+<text x="212" y="144">還缺一個對子</text>
+<text x="80" y="13">2 張將帥配兩個對子</text>
+<text x="212" y="13">又摸到一張</text>
+</g>
+</svg>

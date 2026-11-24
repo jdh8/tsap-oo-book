@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 220 210" width="220" height="210" role="img" aria-label="上排把三張俥拆成一個對子和一組車馬炮，不行。下排三張俥是暗刻，傌和炮等第四張俥">
+<!-- Drawn by fig.py: edit the figure there -->
+<g fill="currentColor" stroke="currentColor" stroke-width="1.5">
+<rect x="1.5" y="1.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="12" y="42" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<rect x="25.5" y="1.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="36" y="42" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<rect x="65.5" y="1.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="76" y="42" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<rect x="89.5" y="1.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="100" y="42" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">傌</text>
+<rect x="113.5" y="1.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="124" y="42" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">炮</text>
+<rect x="1.5" y="113.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="12" y="154" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<rect x="25.5" y="113.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="36" y="154" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<rect x="49.5" y="113.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="60" y="154" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<g opacity="0.5" stroke-dasharray="4 3">
+<rect x="89.5" y="113.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="100" y="154" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+</g>
+<rect x="113.5" y="113.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="124" y="154" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">傌</text>
+<rect x="137.5" y="113.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="148" y="154" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">炮</text>
+</g>
+<g fill="currentColor" font-size="14" text-anchor="middle">
+<text x="24" y="90" font-weight="bold">對子</text>
+<text x="100" y="90" font-weight="bold">車馬炮</text>
+<text x="36" y="202" font-weight="bold">暗刻</text>
+<text x="124" y="202" font-weight="bold">等第四張</text>
+<text x="172" y="42.0" font-size="16" font-weight="bold" text-anchor="start">不行</text>
+<text x="172" y="154.0" font-size="16" font-weight="bold" text-anchor="start">可以</text>
+</g>
+</svg>

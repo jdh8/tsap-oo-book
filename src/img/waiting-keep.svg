@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 292 226" width="292" height="226" role="img" aria-label="上排打掉仕，剩下兩張帥和俥、炮，等傌，聽牌。下排打掉俥，剩下兩張帥和仕、炮兩張散牌，沒有聽牌">
+<!-- Drawn by fig.py: edit the figure there -->
+<g fill="currentColor" stroke="currentColor" stroke-width="1.5">
+<rect x="1.5" y="27.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="12" y="68" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">帥</text>
+<rect x="41.5" y="27.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="52" y="68" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">帥</text>
+<rect x="81.5" y="27.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="92" y="68" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<g opacity="0.5" stroke-dasharray="4 3">
+<rect x="105.5" y="27.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="116" y="68" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">傌</text>
+</g>
+<rect x="129.5" y="27.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="140" y="68" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">炮</text>
+<path d="M3,23v-5H61v5" fill="none" stroke-width="1"/>
+<path d="M83,23v-5H149v5" fill="none" stroke-width="1"/>
+<rect x="1.5" y="147.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="12" y="188" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">帥</text>
+<rect x="41.5" y="147.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="52" y="188" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">帥</text>
+<rect x="81.5" y="147.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="92" y="188" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">仕</text>
+<rect x="121.5" y="147.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="132" y="188" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">炮</text>
+<path d="M3,143v-5H61v5" fill="none" stroke-width="1"/>
+<path d="M83,143v-5H141v5" fill="none" stroke-width="1"/>
+</g>
+<g fill="currentColor" font-size="14" text-anchor="middle">
+<text x="32" y="13">將帥</text>
+<text x="116" y="13">等傌</text>
+<text x="32" y="133">將帥</text>
+<text x="112" y="133">兩張散牌</text>
+<text x="164" y="68.0" font-size="16" font-weight="bold" text-anchor="start">打仕：聽牌</text>
+<text x="164" y="188.0" font-size="16" font-weight="bold" text-anchor="start">打俥：沒有聽牌</text>
+</g>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 714.4 126" width="714.4" height="126" role="img" aria-label="21 張牌排成八個牌組：將帥 1 胡、四色兵卒 5 胡、將士象 2 胡、車馬炮 1 胡、暗刻 3 胡、兩個對子 0 胡、胡的那一張湊成的車馬炮 1 胡，合計 13 胡">
+<!-- Drawn by fig.py: edit the figure there -->
+<g fill="currentColor" stroke="currentColor" stroke-width="1.5">
+<rect x="1.5" y="11.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="12" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">帥</text>
+<rect x="41.5" y="11.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="52" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">兵</text>
+<rect x="65.5" y="11.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="76" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">兵</text>
+<rect x="89.5" y="11.5" width="21" height="69" rx="2" fill="#4caf7d"/>
+<text x="100" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">卒</text>
+<rect x="113.5" y="11.5" width="21" height="69" rx="2" fill="#fdfdf7"/>
+<text x="124" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">卒</text>
+<rect x="153.5" y="11.5" width="21" height="69" rx="2" fill="#4caf7d"/>
+<text x="164" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">將</text>
+<rect x="177.5" y="11.5" width="21" height="69" rx="2" fill="#4caf7d"/>
+<text x="188" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">士</text>
+<rect x="201.5" y="11.5" width="21" height="69" rx="2" fill="#4caf7d"/>
+<text x="212" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">象</text>
+<rect x="241.5" y="11.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="252" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<rect x="265.5" y="11.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="276" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">傌</text>
+<rect x="289.5" y="11.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="300" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">炮</text>
+<rect x="329.5" y="11.5" width="21" height="69" rx="2" fill="#fdfdf7"/>
+<text x="340" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">車</text>
+<rect x="353.5" y="11.5" width="21" height="69" rx="2" fill="#fdfdf7"/>
+<text x="364" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">車</text>
+<rect x="377.5" y="11.5" width="21" height="69" rx="2" fill="#fdfdf7"/>
+<text x="388" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">車</text>
+<rect x="417.5" y="11.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="428" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">仕</text>
+<rect x="441.5" y="11.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="452" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">仕</text>
+<rect x="481.5" y="11.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="492" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">相</text>
+<rect x="505.5" y="11.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="516" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">相</text>
+<rect x="545.5" y="11.5" width="21" height="69" rx="2" fill="#4caf7d"/>
+<text x="556" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">車</text>
+<rect x="569.5" y="11.5" width="21" height="69" rx="2" fill="#4caf7d"/>
+<text x="580" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">馬</text>
+<rect x="593.5" y="11.5" width="21" height="69" rx="2" fill="#4caf7d"/>
+<text x="604" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">包</text>
+<path d="M599,2h10l-5,7z" stroke="none"/>
+</g>
+<g fill="currentColor" font-size="14" text-anchor="middle">
+<text x="12" y="100" font-weight="bold">1</text>
+<text x="12" y="118">將帥</text>
+<text x="88" y="100" font-weight="bold">5</text>
+<text x="88" y="118">四色兵卒</text>
+<text x="188" y="100" font-weight="bold">2</text>
+<text x="188" y="118">將士象</text>
+<text x="276" y="100" font-weight="bold">1</text>
+<text x="276" y="118">車馬炮</text>
+<text x="364" y="100" font-weight="bold">3</text>
+<text x="364" y="118">暗刻</text>
+<text x="440" y="100" font-weight="bold">0</text>
+<text x="440" y="118">對子</text>
+<text x="504" y="100" font-weight="bold">0</text>
+<text x="504" y="118">對子</text>
+<text x="580" y="100" font-weight="bold">1</text>
+<text x="580" y="118">車馬炮</text>
+<text x="628" y="52.0" font-size="16" font-weight="bold" text-anchor="start">＝ 13 胡</text>
+</g>
+</svg>

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Draw the meld diagrams of 第二部 into src/img/: python3 fig.py
+"""Draw the figures of the book into src/img/: python3 fig.py
 
 A card is one cell wide and every meld is three cells tall, so a three-card
 meld is a square and a winning hand is seven squares.  胡 add up by eye: a
@@ -14,9 +14,16 @@ box is 0 胡.
     G  單張將帥                     empty strip with the coin
     P  對子                         empty box, two wide
 
+A colour and a piece are a real card, dyed like the cards of the text: y俥 is
+the yellow 俥.  Two marks go before a card or a meld: + points a triangle at
+the card that came from the table, ? draws what the hand is still waiting for,
+dashed and faint.
+
 The files are inlined with {{#include}}, so they take the page's ink and font.
 Keep 顏色 + 棋子 out of the text: book.toml would turn it into a card.
 """
+import math
+import re
 from pathlib import Path
 
 U = 24  # one card
@@ -25,13 +32,48 @@ FS = 14  # labels
 CARDS = dict(zip("1KSQDGP", (3, 3, 3, 4, 3, 1, 2)))
 STRIPES = "#d9534f", "#f0c541", "#4caf7d", "#fdfdf7"  # the cards of style.css
 SHADE = {"1": 0.2, "K": 0.2, "D": 0.6}
+COLORS = dict(zip("rygw", STRIPES))
+INK = "#1b1b1b"  # on a card, whatever the theme
+CARD = re.compile("[紅黃][帥仕相俥傌炮兵]|[綠白][將士象車馬包卒]")  # what book.toml replaces
 
 
 def width(text, size=FS):
     return sum(size if ord(c) > 0x2E7F else size * 0.6 for c in text)
 
 
-def piece(kind, x, y):
+def parse(pieces):
+    """Split a block into its (mark, kind): a kind of two characters is a real card."""
+    out, mark, chars = [], "", iter(pieces)
+    for c in chars:
+        if c in "+?":
+            mark = c
+        else:
+            out.append((mark, c + next(chars) if c in COLORS else c))
+            mark = ""
+    return out
+
+
+def cells(kind):
+    return CARDS.get(kind, 1)
+
+
+def card(kind, x, y):
+    return [
+        f'<rect x="{x + 1.5}" y="{y + 1.5}" width="{U - 3}" height="{3 * U - 3}" rx="2" fill="{COLORS[kind[0]]}"/>',
+        f'<text x="{x + U / 2:g}" y="{y + 1.5 * U + 6:g}" fill="{INK}" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">{kind[1]}</text>',
+    ]
+
+
+def piece(kind, x, y, mark=""):
+    out = card(kind, x, y) if len(kind) == 2 else meld(kind, x, y)
+    if mark == "?":
+        out = ['<g opacity="0.5" stroke-dasharray="4 3">', *out, "</g>"]
+    if mark == "+":  # over the last card
+        out.append(f'<path d="M{x + (cells(kind) - 0.5) * U - 5:g},{y - 8}h10l-5,7z" stroke="none"/>')
+    return out
+
+
+def meld(kind, x, y):
     n = CARDS[kind]
     w, h = n * U - 3, 3 * U - 3
     out = [
@@ -46,17 +88,22 @@ def piece(kind, x, y):
     return out
 
 
+def bracket(a, b, y):
+    return f'<path d="M{a:g},{y - 3}v-5H{b:g}v5" fill="none" stroke-width="1"/>'
+
+
 def row(y, blocks, total=None, over=(), slots=False):
     """Blocks are (pieces, 胡, name): returns the shapes, the text and the size."""
     shapes, text, spans = [], [], []
-    top = y + 26 * bool(over)
+    lid = y + 26 * bool(over)
+    top = lid + 10 * any("+" in pieces for pieces, *_ in blocks)
     base = top + 3 * U + 10 * slots
     x = 0
     for pieces, *labels in blocks:
         start = x
-        for kind in pieces:
-            shapes += piece(kind, x, top)
-            x += CARDS[kind] * U
+        for mark, kind in parse(pieces):
+            shapes += piece(kind, x, top, mark)
+            x += cells(kind) * U
         spans.append((start, x))
         if slots:  # one bracket for each group of three cards
             for a in range(start, x, 3 * U):
@@ -67,9 +114,8 @@ def row(y, blocks, total=None, over=(), slots=False):
             text.append(f'<text x="{(start + x) / 2:g}" y="{base + 18 * (i + 1)}"{bold}>{label}</text>')
         x += GAP
     for i, j, label in over:
-        a, b = spans[i][0] + 3, spans[j][1] - 3
-        shapes.append(f'<path d="M{a},{top - 3}v-5H{b}v5" fill="none" stroke-width="1"/>')
-        text.append(f'<text x="{(a + b) / 2:g}" y="{y + 13}">{label}</text>')
+        shapes.append(bracket(spans[i][0] + 3, spans[j][1] - 3, lid))
+        text.append(f'<text x="{(spans[i][0] + spans[j][1]) / 2:g}" y="{y + 13}">{label}</text>')
     lines = max(len(block) - 1 for block in blocks)
     return shapes, text, (total, top + 1.5 * U + 6), x - GAP, base + 18 * lines + 8
 
@@ -86,6 +132,10 @@ def figure(alt, *rows):
         if label:
             text.append(f'<text x="{w + 12}" y="{at}" font-size="16" font-weight="bold" text-anchor="start">{label}</text>')
     w += max(12 + width(label, 16) if label else 0 for label, _ in totals)
+    return svg(alt, w, y, shapes, text)
+
+
+def svg(alt, w, y, shapes, text):
     return "\n".join([
         # Markdown needs the whole opening tag on one line and no blank lines inside
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{-GAP / 2:g} 0 {w + GAP:g} {y}" width="{w + GAP:g}" height="{y}" role="img" aria-label="{alt}">',
@@ -99,6 +149,34 @@ def figure(alt, *rows):
         "</svg>",
         "",
     ])
+
+
+def strip(alt, unit, parts, over, pad=0):
+    """A bar to scale: parts are (length, shade, label), over are (from, to, label)."""
+    shapes, text, x = [], [], 0
+    for n, shade, label in parts:
+        shapes.append(f'<rect x="{x + 1.5}" y="27.5" width="{n * unit - 3}" height="{U - 3}" rx="2" fill-opacity="{shade}"/>')
+        text.append(f'<text x="{x + n * unit / 2:g}" y="{44 + U}">{label}</text>')
+        x += n * unit
+    for a, b, label in over:
+        shapes.append(bracket(a * unit + 3, b * unit - 3, 26))
+        text.append(f'<text x="{(a + b) * unit / 2:g}" y="13">{label}</text>')
+    return svg(alt, x + pad, 52 + U, shapes, text)
+
+
+def seats(alt):
+    """Four seats around a table, the turn running anticlockwise from 你 at the bottom."""
+    c, r, gap = 96, 72, math.radians(24)
+    shapes = [f'<rect x="{c - 34}" y="{c - 34}" width="68" height="68" rx="4" fill="none"/>']
+    text = [f'<text x="{c}" y="{c + 5}">逆時針</text>']
+    for i, name in enumerate(("你", "下家", "對家", "上家")):
+        a = math.pi / 2 * (1 - i)  # y points down, so the angle falls as the turn passes
+        text.append(f'<text x="{c + r * math.cos(a):g}" y="{c + r * math.sin(a) + 5:g}" font-weight="bold">{name}</text>')
+        (x0, y0), (x1, y1) = ((c + r * math.cos(t), c + r * math.sin(t)) for t in (a - gap, a - math.pi / 2 + gap))
+        shapes.append(f'<path d="M{x0:.1f},{y0:.1f}A{r},{r} 0 0 0 {x1:.1f},{y1:.1f}" fill="none"/>')
+        turn = math.degrees(math.atan2(y1 - c, x1 - c)) - 90  # the tangent where the arc ends
+        shapes.append(f'<path d="M0,-5l9,5 -9,5z" stroke="none" transform="translate({x1:.1f},{y1:.1f}) rotate({turn:.1f})"/>')
+    return svg(alt, 2 * c, 2 * c, shapes, text)
 
 
 RICH = [("K", "2"), ("S", "3")]
@@ -161,10 +239,100 @@ FIGURES = {
         "將帥和士吃成對子是 3 張 1 胡，等到象湊成將士象是 3 張 2 胡",
         dict(blocks=[("GP", "3 張 1 胡", "吃成對子"), ("K", "3 張 2 胡", "等到順子")]),
     ),
+    "play-seats": seats("四家圍著牌桌，逆時針輪流：你、右手邊的下家、對面的對家、左手邊的上家，再回到你"),
+    "play-deck": strip(
+        "112 張牌：莊家 21 張，另外三家各 20 張，共發出 81 張。牌堆 31 張，最多摸 25 張，最底下 6 張是廢牌",
+        6,
+        [(21, 0, "莊家 21 張"), (20, 0, "20 張"), (20, 0, "20 張"), (20, 0, "20 張"), (25, 0.2, "最多摸 25 張"), (6, 0.6, "廢牌 6 張")],
+        [(0, 81, "發出 81 張"), (81, 112, "牌堆 31 張")],
+        pad=8,
+    ),
+    "melds-hand": figure(
+        "21 張牌排成八個牌組：將帥 1 胡、四色兵卒 5 胡、將士象 2 胡、車馬炮 1 胡、暗刻 3 胡、兩個對子 0 胡、胡的那一張湊成的車馬炮 1 胡，合計 13 胡",
+        dict(
+            blocks=[
+                ("y帥", "1", "將帥"),
+                ("r兵y兵g卒w卒", "5", "四色兵卒"),
+                ("g將g士g象", "2", "將士象"),
+                ("r俥r傌r炮", "1", "車馬炮"),
+                ("w車w車w車", "3", "暗刻"),
+                ("y仕y仕", "0", "對子"),
+                ("r相r相", "0", "對子"),
+                ("g車g馬+g包", "1", "車馬炮"),
+            ],
+            total="＝ 13 胡",
+        ),
+    ),
+    "melds-belly": figure(
+        "上排把三張俥拆成一個對子和一組車馬炮，不行。下排三張俥是暗刻，傌和炮等第四張俥",
+        dict(blocks=[("y俥y俥", "對子"), ("y俥y傌y炮", "車馬炮")], total="不行"),
+        dict(blocks=[("y俥y俥y俥", "暗刻"), ("?y俥y傌y炮", "等第四張")], total="可以"),
+    ),
+    "shrink-outside": figure(
+        "每個牌組只有一張外來的牌：對子原有 1 張，三張的順子和碰原有 2 張，四色兵卒和槓原有 3 張，摸到的將帥原有 0 張",
+        dict(
+            blocks=[
+                ("w馬+w馬", "1 張", "對子"),
+                ("r俥r傌+r炮", "2 張", "順子"),
+                ("g車g車+g車", "2 張", "碰"),
+                ("r兵y兵g卒+w卒", "3 張", "四色兵卒"),
+                ("y仕y仕y仕+y仕", "3 張", "槓"),
+                ("+y帥", "0 張", "將帥"),
+            ],
+        ),
+    ),
+    "material-third": figure(
+        "兩張將帥各配一個對子，剛好配完。又摸到一張將帥，還缺一個對子來配",
+        dict(
+            blocks=[("GP", "1"), ("GP", "1"), ("+G?P", "1", "還缺一個對子")],
+            over=[(0, 1, "2 張將帥配兩個對子"), (2, 2, "又摸到一張")],
+        ),
+    ),
+    "partial-waits": figure(
+        "兩色兵卒等另外兩色的 8 張，吃成 3 胡。將士等 4 張象，吃成 2 胡。車馬等 4 張炮，吃成 1 胡",
+        dict(blocks=[("r兵y兵",), ("?g卒" * 4 + "?w卒" * 4,)], total="8 張，3 胡"),
+        dict(blocks=[("y帥y仕",), ("?y相" * 4,)], total="4 張，2 胡"),
+        dict(blocks=[("y俥y傌",), ("?y炮" * 4,)], total="4 張，1 胡"),
+    ),
+    "eat-swap": figure(
+        "吃之前，手上有一組車馬炮和一張散牌。吃進上家打的俥之後，桌上是一組車馬炮，手上原本的俥落單，另一張散牌打掉。胡數和散牌的張數都沒有變",
+        dict(
+            blocks=[("y俥y傌y炮", "1 胡"), ("w士", "散牌"), ("y俥", "打出")],
+            over=[(0, 1, "手上"), (2, 2, "上家")],
+            total="1 胡，1 張散牌",
+        ),
+        dict(
+            blocks=[("+y俥y傌y炮", "1 胡"), ("y俥", "散牌"), ("w士", "打掉")],
+            over=[(0, 0, "桌上"), (1, 1, "手上"), (2, 2, "棄牌")],
+            total="1 胡，1 張散牌",
+        ),
+    ),
+    "waiting-keep": figure(
+        "上排打掉仕，剩下兩張帥和俥、炮，等傌，聽牌。下排打掉俥，剩下兩張帥和仕、炮兩張散牌，沒有聽牌",
+        dict(
+            blocks=[("r帥",), ("r帥",), ("r俥?r傌r炮",)],
+            over=[(0, 1, "將帥"), (2, 2, "等傌")],
+            total="打仕：聽牌",
+        ),
+        dict(
+            blocks=[("r帥",), ("r帥",), ("r仕",), ("r炮",)],
+            over=[(0, 1, "將帥"), (2, 3, "兩張散牌")],
+            total="打俥：沒有聽牌",
+        ),
+    ),
+    # The 12.2 胡 of payoff.md: lose 12, win 3 × 12.2 ≈ 37
+    "payoff-swing": strip(
+        "輸一局付 12，贏一局收 37，相差 49。多一胡只多收 3",
+        10,
+        [(12, 0, "輸一局 −12"), (37, 0.2, "贏一局 +37"), (3, 0.6, "多一胡 +3")],
+        [(0, 49, "相差 49")],
+        pad=14,
+    ),
 }
 
 if __name__ == "__main__":
     out = Path(__file__).parent / "src" / "img"
     out.mkdir(exist_ok=True)
-    for name, svg in FIGURES.items():
-        (out / f"{name}.svg").write_text(svg)
+    for name, text in FIGURES.items():
+        assert not CARD.search(text), f"book.toml would turn {CARD.search(text)[0]} of {name} into a card"
+        (out / f"{name}.svg").write_text(text)

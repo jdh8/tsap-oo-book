@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 504 126" width="504" height="126" role="img" aria-label="每個牌組只有一張外來的牌：對子原有 1 張，三張的順子和碰原有 2 張，四色兵卒和槓原有 3 張，摸到的將帥原有 0 張">
+<!-- Drawn by fig.py: edit the figure there -->
+<g fill="currentColor" stroke="currentColor" stroke-width="1.5">
+<rect x="1.5" y="11.5" width="21" height="69" rx="2" fill="#fdfdf7"/>
+<text x="12" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">馬</text>
+<rect x="25.5" y="11.5" width="21" height="69" rx="2" fill="#fdfdf7"/>
+<text x="36" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">馬</text>
+<path d="M31,2h10l-5,7z" stroke="none"/>
+<rect x="65.5" y="11.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="76" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">俥</text>
+<rect x="89.5" y="11.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="100" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">傌</text>
+<rect x="113.5" y="11.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="124" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">炮</text>
+<path d="M119,2h10l-5,7z" stroke="none"/>
+<rect x="153.5" y="11.5" width="21" height="69" rx="2" fill="#4caf7d"/>
+<text x="164" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">車</text>
+<rect x="177.5" y="11.5" width="21" height="69" rx="2" fill="#4caf7d"/>
+<text x="188" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">車</text>
+<rect x="201.5" y="11.5" width="21" height="69" rx="2" fill="#4caf7d"/>
+<text x="212" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">車</text>
+<path d="M207,2h10l-5,7z" stroke="none"/>
+<rect x="241.5" y="11.5" width="21" height="69" rx="2" fill="#d9534f"/>
+<text x="252" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">兵</text>
+<rect x="265.5" y="11.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="276" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">兵</text>
+<rect x="289.5" y="11.5" width="21" height="69" rx="2" fill="#4caf7d"/>
+<text x="300" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">卒</text>
+<rect x="313.5" y="11.5" width="21" height="69" rx="2" fill="#fdfdf7"/>
+<text x="324" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">卒</text>
+<path d="M319,2h10l-5,7z" stroke="none"/>
+<rect x="353.5" y="11.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="364" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">仕</text>
+<rect x="377.5" y="11.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="388" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">仕</text>
+<rect x="401.5" y="11.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="412" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">仕</text>
+<rect x="425.5" y="11.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="436" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">仕</text>
+<path d="M431,2h10l-5,7z" stroke="none"/>
+<rect x="465.5" y="11.5" width="21" height="69" rx="2" fill="#f0c541"/>
+<text x="476" y="52" fill="#1b1b1b" stroke="none" font-size="16" font-weight="bold" text-anchor="middle">帥</text>
+<path d="M471,2h10l-5,7z" stroke="none"/>
+</g>
+<g fill="currentColor" font-size="14" text-anchor="middle">
+<text x="24" y="100" font-weight="bold">1 張</text>
+<text x="24" y="118">對子</text>
+<text x="100" y="100" font-weight="bold">2 張</text>
+<text x="100" y="118">順子</text>
+<text x="188" y="100" font-weight="bold">2 張</text>
+<text x="188" y="118">碰</text>
+<text x="288" y="100" font-weight="bold">3 張</text>
+<text x="288" y="118">四色兵卒</text>
+<text x="400" y="100" font-weight="bold">3 張</text>
+<text x="400" y="118">槓</text>
+<text x="476" y="100" font-weight="bold">0 張</text>
+<text x="476" y="118">將帥</text>
+</g>
+</svg>
