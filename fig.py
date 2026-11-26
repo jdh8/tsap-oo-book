@@ -374,9 +374,30 @@ FIGURES = {
     ),
 }
 
+# The coin of 將帥, twice.  The title of the preface is inlined like the figures and
+# takes the ink of the page.  A tab hands no ink to theme/favicon.svg, so that file
+# flips itself to white on a dark browser, as the icon of mdbook does.
+COIN = """<circle r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<path d="M0,-3l3,3 -3,3 -3,-3z" fill="currentColor"/>
+</svg>
+"""
+# The box is the outer edge of the ring: 6.5 and half the stroke
+BOX = 'xmlns="http://www.w3.org/2000/svg" viewBox="-7.25 -7.25 14.5 14.5"'
+TITLE = f"""<svg {BOX} width="80" height="80" role="img" aria-label="十胡">
+<!-- Drawn by fig.py: edit the figure there -->
+{COIN}"""
+FAVICON = f"""<svg {BOX}>
+<!-- Drawn by fig.py: edit the figure there -->
+<style>@media (prefers-color-scheme: dark) {{ svg {{ color: white; }} }}</style>
+{COIN}"""
+
 if __name__ == "__main__":
+    theme = Path(__file__).parent / "theme"
+    theme.mkdir(exist_ok=True)
+    (theme / "favicon.svg").write_text(FAVICON)
     out = Path(__file__).parent / "src" / "img"
     out.mkdir(exist_ok=True)
+    (out / "coin.svg").write_text(TITLE)
     for name, text in FIGURES.items():
         assert not CARD.search(text), f"book.toml would turn {CARD.search(text)[0]} of {name} into a card"
         (out / f"{name}.svg").write_text(text)
